@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru" data-entry-boot>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#dddad5" />
+    <meta name="description" content="Авторские тату для девушек в Далате: тонкая графика, мягкие тени и работа со шрамами. Эскиз до сеанса и примерка размера и расположения. Black Magic." />
+    <link rel="icon" type="image/svg+xml" href="/assets/black-magic.svg" />
+    <title>Black Magic: авторские татуировки для девушек в Далате</title>
+    <style>
+      html,body{margin:0;background:#dddad5}
+      html[data-entry-boot] #root{visibility:hidden;opacity:0}
+      .entry-page[data-loading="true"]{display:block;visibility:hidden;opacity:0}
+      .entry-loader{position:fixed;inset:0;z-index:100;background:#dddad5}
+      #boot-loader{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background-color:#dddad5;color:#33302e;font-family:Lora,"Times New Roman",serif;text-align:center}
+      #boot-loader p{max-width:32ch;font-size:20px;line-height:1.4}
+      #boot-loader button{border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;font:inherit;cursor:pointer}
+    </style>
+    <script type="module" crossorigin src="/assets/index-BeHZLIxH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-d_KEUkZb.css">
+  </head>
+  <body>
+    <div id="boot-loader" class="watercolor-surface watercolor-surface--paper" role="status" aria-label="Black Magic">
+      <p id="boot-message"></p>
+      <button id="boot-retry" hidden type="button">Загрузить снова</button>
+    </div>
+    <div id="root"></div>
+    <script>
+      window.blackMagicBootDeadline=setTimeout(function(){
+        var loader=document.getElementById('boot-loader');
+        if(!loader)return;
+        var language='ru';try{language=localStorage.getItem('black-magic-language')||'ru'}catch{}
+        var text={ru:['Загрузка занимает чуть больше времени. Можно попробовать ещё раз.','Загрузить снова'],en:['Loading is taking a little longer. You can try again.','Try again'],vi:['Trang đang tải lâu hơn một chút. Bạn có thể thử lại.','Thử lại']}[language]||['Loading is taking a little longer. You can try again.','Try again'];
+        document.getElementById('boot-message').textContent=text[0];
+        var retry=document.getElementById('boot-retry');retry.textContent=text[1];retry.hidden=false;retry.onclick=function(){location.reload()};
+      },15000);
+    </script>
+  </body>
+</html>
